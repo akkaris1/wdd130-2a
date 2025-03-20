@@ -1,0 +1,235 @@
+
+
+
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+
+/*@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');  */
+@import url('https://fonts.google.com/specimen/Open+Sans?lang=en_Latn');
+
+:root {
+  /* change the values below to your colors from your palette */
+
+  --primary-color: #396E94   ;
+  --secondary-color: #e5f2c9 ;
+  --accent1-color: #212682;  
+  --accent2-color: #edf066;
+
+/*  https://coolors.co/e5f2c9-212682-73ab84-1e1a1d-edf066< */
+
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Open Sans";
+  --paragraph-font: Open Sans, sans-serif;   /* Why can't they be the same? */
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #1e1a1d;  /* headlines on a white background */ 
+  --headline-color-on-color: #e5f2c9; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #1e1a1d; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #1e1a1d;  /* Top Nav Bar */
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #white;   /*change this at some point */
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */  
+
+/* Style for the body element */
+body {
+  max-width: 960px;  /* Limits the maximum width of the body to 960 pixels */
+  margin: 0 auto;  /* Centers the body content horizontally */
+  padding: 4em;  /* Adds padding around the content */
+  font-size: 18px;  /* Sets the base font size */
+  text-align: center;  /* Centers all text within the body */
+}
+
+/* Style for images */
+img {
+  display: block;  /* Ensures images are displayed as block elements */
+  margin: 0 auto;  /* Centers the image horizontally */
+  max-width: 300px;  /* Limits the maximum width of images to 300 pixels */
+}
+
+/* Style for all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);  /* Uses a CSS variable for the font */
+  color: var(--headline-color-on-white);  /* Sets the color using a CSS variable */
+}
+
+/* Specific style for h2 elements */
+h2 {
+  text-align: center;  /* Centers h2 text */
+}
+
+/* Style for horizontal rules */
+hr {
+  height: 3px;  /* Sets the thickness of the horizontal line */
+  margin: 35px 0;  /* Adds vertical spacing above and below */
+  background: var(--accent1-color);  /* Sets the background color using a CSS variable */
+}
+
+/* Style for the header element */
+header {
+  padding: 1em;  /* Adds padding inside the header */
+  text-align: center;  /* Centers text inside the header */
+  color: var(--headline-color-on-color);  /* Sets text color using a variable */
+  background-color: var(--paragraph-background-color);  /* Sets the background color */
+}
+
+/* Style for h1 and h2 elements inside the header */
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);  /* Ensures heading text color is consistent */
+}
+
+/* Style for paragraph elements */
+p {
+  font-family: var(--paragraph-font);  /* Sets font using a CSS variable */
+  color: var(--paragraph-color-on-white);  /* Sets text color */
+  padding: 1em;  /* Adds padding around paragraphs */
+}
+
+/* Styles for the colors table */
+.colors {
+  width: 100%;  /* Sets table width to fill container */
+  min-width: 350px;  /* Ensures table is at least 350px wide */
+  margin: 30px auto;  /* Centers table and adds vertical spacing */
+  text-align: center;  /* Centers table text */
+}
+
+/* Style for table headers inside the colors table */
+.colors th {
+  background-color: #999;  /* Sets a grey background for table headers */
+}
+
+/* Style for table data cells inside the colors table */
+.colors td {
+  width: 25%;  /* Each table cell takes up 25% of the row width */
+  height: 3em;  /* Sets the height of table cells */
+}
+
+/* Background colors for different classes */
+.primary {
+  background-color: var(--primary-color);  /* Uses variable for primary color */
+}
+
+.secondary {
+  background-color: var(--secondary-color);  /* Uses variable for secondary color */
+}
+
+.accent1 {
+  background-color: var(--accent1-color);  /* Uses variable for accent1 color */
+}
+
+.accent2 {
+  background-color: var(--accent2-color);  /* Uses variable for accent2 color */
+}
+
+/* Style for paragraphs with the "colored" class */
+p.colored {
+  background-color: var(--paragraph-background-color);  /* Sets background color */
+  color: var(--paragraph-color-on-color);  /* Sets text color */
+}
+
+/* Style for navigation */
+nav {
+  background-color: var(--nav-background-color);  /* Sets navigation background */
+  line-height: 3em;  /* Sets vertical spacing between lines */
+  text-align: center;  /* Centers text */
+  font-size: 1.2em;  /* Increases font size */
+}
+
+/* Navigation list styling */
+nav {
+  list-style-type: none;  /* Removes bullet points from lists */
+  display: flex;  /* Uses flexbox for layout */
+}
+
+/* Style for navigation links */
+nav a {
+  padding: 1em;  /* Adds padding */
+  min-width: 120px;  /* Ensures minimum width */
+  text-decoration: none;  /* Removes underline */
+  padding: 10px;  /* Duplicate padding rule, might be redundant */
+}
+
+/* Default link styles */
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);  /* Sets default link color */
+}
+
+/* Hover state for navigation links */
+nav a:hover {
+  color: var(--nav-hover-link-color);  /* Changes text color on hover */
+  background-color: var(--nav-hover-background-color);  /* Changes background color on hover */
+}
+
+/* Sitemap grid layout */
+.sitemap {
+  display: grid;  /* Uses CSS grid */
+  justify-content: center;  /* Centers the grid items */
+  grid-template-columns: repeat(6, 15%);  /* Defines six equal columns */
+  grid-template-rows: 3em 1.5em 1.5em 3em;  /* Defines row heights */
+  grid-template-areas: 
+    ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";  /* Defines named grid areas */
+}
+
+/* Ensures grid items are centered */
+.sitemap > div {
+  text-align: center;
+}
+
+/* Styles for sitemap sections */
+.sm-home {
+  grid-area: home;  /* Places element in "home" grid area */
+  background-color: #ccc;  /* Sets background color #ccc is light gray*/
+  line-height: 3em;  /* Centers the text vertically */
+}
+
+.sm-page2 {
+  grid-area: page2;  /* Places element in "page2" grid area */
+  background-color: #ccc;  
+  line-height: 3em;
+}
+
+.sm-page3 {
+  grid-area: page3;  /* Places element in "page3" grid area */
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+/* Sitemap connectors */
+.top {
+  grid-area: top;
+  border-left: 1px solid;  /* Adds left border */
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;  /* Adds top border */
+  border-left: 1px solid;  /* Adds left border */
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;  /* Adds top border */
+  border-right: 1px solid;  /* Adds right border */
+}
+
+
+
+/*  Notes:  Duplicate padding in nav a
+
+There are two padding declarations (padding: 1em; and padding: 10px;). The second one will override the first.
+Navigation styling issue
+
+The second nav selector (nav { list-style-type: none; display: flex; }) is not actually targeting <ul> or <ol>. If nav is meant to be a <ul>, it should be nav ul.
+Undefined Variables
+
+The CSS relies on custom properties (var(--some-variable)). Make sure these are defined in the root (:root {}) or imported correctly.  */

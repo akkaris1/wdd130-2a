@@ -1,0 +1,131 @@
+
+
+/* styles1.css  */
+/* Global Styles */
+body {
+    max-width: 1600px;   /* Limits the width */
+    margin: 0 auto;  /* centers the whole page.  Maybe not the right idea */
+    padding: 20px;   /* Good space around the edges */
+    font-family: Arial, sans-serif; /* Universal font */
+}
+
+/* Header Styles */
+header {     /* Here's my Green Header  */
+    background-color: green;
+    color: white;   /* white text */
+    text-align: center;  /* Centers the navigation links */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1600px;   /* No overflowing Allowed!!   100%*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: black;  /* color of words */
+    margin: 0 15px;
+    text-decoration: none;  /* This removes pesky underline */
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero-msg {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {    /* these are the words  */
+    text-align: center;
+    font-size: 40px;  /*h1 size, I think */
+    color: #4b0082;     /* I like this indigo color */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+h3.home-title {
+    font-size: 20px; /* Smaller size than h1 */
+    margin: 15px 0;
+}
+
+h2.home-title {
+    font-size: 15px; /* Smaller size than h3 */
+    margin: 15px 0;
+}
+
+/* Button Styles */
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;   /*Space ABOVE the button */
+    margin-bottom: 20px; /* Adds space below the button */
+}
+
+.book {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;  /*dark blue button*/
+    color: white;  /* white words*/
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Image and Icon Layout */
+.image-container {    /* Center the entire container */
+    display: flex;
+    justify-content: center;    /* Centers horizontally */
+    margin: 20px auto;
+}
+
+.photo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-img.photo {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    border: 3px solid red;  /* how fat the frame is */
+    padding: 5px;  /* Space between the pic and frame: I like a little there! */
+    box-sizing: border-box;
+}
+
+.icon {     /* The icon stays on the photo now?? */
+    position: absolute; /*should this be relative? */
+    bottom: 0px;       /* 10px from the bottom of the photo */
+    right: 20px;   /*  I don't get it */
+    width: 50px;       /* Adjusts the icon size */
+    height: auto;    /* Maintains the icon’s proportions */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6a5acd; /* SlateBlue */
+    color: white;
+    text-align: center;  /* Centers all footer content */
+    padding: 20px;  /* Adds space inside the footer */
+    width: 100%;    /* Ensures it stretches across the full page */
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* Info Box  */
+.info-box {
+    background-color: #ffa07a; /* Light Salmon */
+    height: 150px;
+    width: 100%;        /* Full-width box */
+    margin: 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;   /* Doesn't hurt....*/
+}

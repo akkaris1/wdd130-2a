@@ -1,0 +1,54 @@
+
+
+
+@import url("styles_index.css"); /* Imports the main styles file */
+
+/* Reverse layout for night.html */
+.image-item {
+    flex-direction: row-reverse; /* Flips text and image */
+}
+
+/* Optional: Make sure images are properly sized */
+.image-item img {
+    width: auto;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align images and text */
+    gap: 20px; /* Adds spacing between stacked items */
+
+
+/* the images just above the footer...*/
+
+    .equipment-gallery {
+        display: flex;
+        justify-content: center; /* Centers images */
+        gap: 20px; /* Adds spacing between images */
+        margin-top: 40px; /* Adds space above the images */
+        margin-bottom: 40px; /* Adds space below the images */
+    }
+    
+    .equipment-gallery img {
+        width: 250px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 10px; /* Adds rounded corners */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
+        transition: transform 0.3s; /* Smooth hover effect */
+    }
+
+    .equipment-gallery {
+        display: flex;
+        justify-content: center; /* Centers images */
+        gap: 20px; /* Adds spacing between images */
+        margin-top: 80px; /* Increases space above the image row */
+        margin-bottom: 40px; /* Keeps space before the footer */
+    }
+    
+    
+    .equipment-gallery img:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+    }
+    

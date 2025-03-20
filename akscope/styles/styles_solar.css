@@ -1,0 +1,9 @@
+/*styles sheet for solar page */
+
+@import url("styles_index.css"); /* Imports the main styles_index.css file */
+
+/* Make the solar98.jpg image bigger */
+img[src*="solar98.jpg"] {
+    width: 350px;  /* Adjust as needed */
+    height: auto; /* Keeps aspect ratio */
+}

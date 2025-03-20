@@ -1,0 +1,205 @@
+
+
+/* ========== General Styles ========== */
+body {
+    background-color: #e5f2c9;
+    font-family: sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* ========== Header & Navigation ========== */
+header {
+    background-color: #1e1a1d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Logo Styling */
+#logo_link img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #212682;
+}
+
+/* ========== Hero Section ========== */
+#hero-box img {
+    width: 100%;
+    height: auto;
+}
+
+#hero-msg {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    color: white;
+}
+
+/* ========== Main Content Styling ========== */
+main {
+    padding-top: 60px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+/* Image & Text Box Layout */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-box {
+    background-color: lightyellow;
+    padding: 15px;
+    max-width: 600px; /* Adjusted for better balance */
+}
+
+.image-item img {
+    width: auto;
+    height: 250px; /* Ensures uniform image size */
+    object-fit: cover;
+}
+
+/* ========== Buttons ========== */
+.button {
+    display: inline-block;
+    background-color: #ff6600; /* High visibility orange */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #cc5500;
+}
+
+.book, .join {
+    background-color: black;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.button-box {
+    text-align: center;
+}
+
+
+
+/* ========== Footer ========== */
+footer {
+    background-color: #73ab84;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer img {
+    width: 220px;  /*  Adjust the size of the bears */
+    height: 220px;
+    object-fit: cover;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Social Media Icons */
+.social img {
+    width: 60px;  /* adjusts the size of the social media icons*/
+    height: 60px;
+}
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    .image-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header img {
+        width: 80px;
+    }
+}

@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Sets the character encoding to UTF-8 for proper text display -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- Ensures compatibility with older versions of Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Makes the page responsive on different screen sizes -->
+    
+    <title>Contact Us</title>  <!-- The title displayed in the browser tab -->
+
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;  /* Sets the font style */
+            margin: 20px;  /* Adds space around the edges */
+            padding: 20px;  /* Adds space inside the content area */
+            text-align: center;  /* Centers the text on the page */
+        }
+
+        /* Styling for the form */
+        form {
+            max-width: 400px;  /* Limits the form width */
+            margin: auto;  /* Centers the form on the page */
+            padding: 20px;  /* Adds space inside the form */
+            border: 1px solid #ccc;  /* Adds a light gray border around the form */
+            border-radius: 8px;  /* Rounds the corners */
+            background-color: #f9f9f9;  /* Light background color */
+        }
+
+        /* Styling for labels, inputs, and textarea */
+        label, input, textarea {
+            display: block;  /* Ensures each element is on its own line */
+            width: 100%;  /* Makes elements take full width of the form */
+            margin-bottom: 10px;  /* Adds space between elements */
+            padding: 8px;  /* Adds space inside the input fields */
+        }
+
+        /* Styling for the submit button */
+        button {
+            background-color: #4CAF50;  /* Green button color */
+            color: white;  /* White text */
+            padding: 10px;  /* Adds space inside the button */
+            border: none;  /* Removes default button border */
+            border-radius: 5px;  /* Rounds the button corners */
+            cursor: pointer;  /* Changes cursor to pointer on hover */
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #45a049;  /* Slightly darker green on hover */
+        }
+
+        /* Feedback message styles */
+        #feedback {
+            display: none;  /* Initially hidden */
+            margin-top: 20px;  /* Adds space above the message */
+            color: green;  /* Sets text color to green */
+            font-weight: bold;  /* Makes the text bold */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Contact Us</h2>  <!-- Page heading -->
+
+    <!-- Contact form with two fields and a submit button -->
+    <form id="contactForm">
+        <label for="user_name">Name:</label>  <!-- Label for name input -->
+        <input type="text" id="user_name" name="user_name" required>  <!-- Name input field -->
+
+        <label for="user_message">Message:</label>  <!-- Label for message textarea -->
+        <textarea id="user_message" name="user_message" rows="4" required></textarea>  <!-- Message input area -->
+
+        <button type="submit">Submit</button>  <!-- Submit button -->
+    </form>
+
+    <!-- Feedback message area (hidden initially) -->
+    <div id="feedback"></div>
+
+    <script>
+        // Selects the form element using its ID
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevents the form from actually submitting (stopping a page reload)
+
+            // Get the user's name from the input field
+            let name = document.getElementById("user_name").value;
+
+            // Get the feedback message div
+            let feedbackElement = document.getElementById("feedback");
+
+            // Set the feedback message with the user's name
+            feedbackElement.innerHTML = `Hello ${name}! Thank you for your message. We will get back with you as soon as possible!`;
+
+            // Display the feedback message
+            feedbackElement.style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
