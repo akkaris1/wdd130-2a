@@ -77,11 +77,11 @@ main {
 /* try to center the images try2*/
 /*.image-item {
     display: flex;
-    justify-content: space-between; /* Keeps text on left, image on right */
-    align-items: center; /* Ensures images are centered with text */
-    gap: 20px; /* Adds spacing between text and image */
-}
-*/
+    justify-content: space-between; /* Keeps text on left, image on right 
+    align-items: center; /* Ensures images are centered with text 
+    gap: 20px; /* Adds spacing between text and image 
+}  */
+
 
 
 
@@ -98,6 +98,8 @@ main {
     padding: 20px;
     text-align: left;
     width: 100%;
+    margin-top: 140px; /* Adds extra space above each box */
+    margin-bottom: 10px; /* Adds extra space below each box */
 }
 
 
@@ -116,7 +118,7 @@ main {
     height: 300px;
     object-fit: contain;
     display: block;
-    margin-top: 140px; /* Adds extra space above each image */
+    margin-top: 150px; /* Adds extra space above each image */
     margin-bottom: 10px; /* Adds extra space below each image */
 }
 
