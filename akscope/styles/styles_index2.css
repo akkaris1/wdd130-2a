@@ -54,7 +54,7 @@ nav a:hover {
 
 /* ========== Main Content Grid (Fixes Empty Space Issue) ========== */
 main {
-    padding: 60px 20px;
+    padding: 20px 20px;  /* distance between header and title */
 }
 
 .section-title {
@@ -65,7 +65,7 @@ main {
 .image-container {
     display: grid;
     grid-template-columns: 75% 25%; /* Left column (text) takes 75%, right column (image) takes 25% */
-    gap: 40px;
+    gap: 50px;   /*distance between image and textbox */
     align-items: start;
 }
 
@@ -95,13 +95,16 @@ main {
 
 .text-box, .text-box[class*="box"] {
     background-color: lightyellow;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     width: 100%;
-    margin-top: 140px; /* Adds extra space above each box */
+    margin-top: 80px; /* Adds extra space above each box */
     margin-bottom: 10px; /* Adds extra space below each box */
 }
 
+/* I detest grids, and don't like how this is working.  I understand the reasoning behind grids, 
+  but I don't like what they are doing to my site.  The fun just went out the window, and it's
+  become tedious homework.  Prove me wrong.  */
 
 /* Right side: Images */
 .image-item img {
