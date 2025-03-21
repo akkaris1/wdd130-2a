@@ -1,6 +1,8 @@
 
 
 
+
+
 @import url("styles_index.css"); /* Imports the main styles file */
 
 /* Reverse layout for night.html */
@@ -52,3 +54,83 @@
         transform: scale(1.1); /* Slight zoom on hover */
     }
     
+    .equipment-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+      }
+      
+      .image-wrapper {
+        position: relative;
+        width: 180px;
+        overflow: hidden;
+      }
+      
+      .image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
+      
+      /* Hover overlay */
+      .caption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);  /* dark transparent overlay */
+        color: #fff;
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 0.9em;
+      }
+      
+      .image-wrapper:hover .caption {
+        opacity: 1;
+      }
+      
+
+      .equipment-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+      }
+      
+      .image-wrapper {
+        position: relative;
+        width: 350px; /* Set a consistent width */
+        height: 500px; /* Ensure all images stay the same height */
+        overflow: hidden; /* Prevent distortion */
+      }
+      
+      .image-wrapper img {
+        width: 100%;
+        height: 100%; /* This ensures they all stay the same size */
+        object-fit: cover; /* Crop the image slightly instead of stretching */
+        border-radius: 8px;
+      }
+      
+      /* Hover overlay */
+      .caption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 0.9em;
+      }
+      
+      .image-wrapper:hover .caption {
+        opacity: 1;
+      }
+      
