@@ -1,9 +1,7 @@
 
 
 
-
-
-@import url("styles_index.css"); /* Imports the main styles file   Note: not Index2 file, should fix this*/
+@import url("styles_index2.css"); /* Imports the main styles file   Note: not Index2 file, should fix this*/
 
 /* Reverse layout for night.html */
 .image-item {
